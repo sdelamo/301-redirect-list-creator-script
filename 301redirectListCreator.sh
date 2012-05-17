@@ -37,7 +37,6 @@ if(missingParameters == 0) {
 		def path
 		if(it.startsWith('http://www.') && !url.startsWith('http://www.') && url.startsWith('http://')) {
 			def urlWithoutWWW = 'http://' + it.substring('http://www.'.length(), it.length())
-			println urlWithoutWWW
 			path = urlWithoutWWW.replace(url, '')
 		} else {
 			 path = it.replace(url, '')
